@@ -9,6 +9,7 @@ body {
   padding: 10px 30px;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 10px;
 }
 
 .nav-enlace:hover {
@@ -16,7 +17,7 @@ body {
 }
 
 nav {
-  background: darkolivegreen;
+  background: gray;
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -29,9 +30,10 @@ nav {
   border: 2px solid #fff;
   display: none;
   text-transform: uppercase;
+  border-radius: 10px;
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   nav {
     flex-direction: column;
   }
@@ -40,5 +42,8 @@ nav {
   }
   .nav-boton {
     display: inline-block;
+  }
+  .desaparece {
+    display: none;
   }
 }
